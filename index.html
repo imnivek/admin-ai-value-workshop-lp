@@ -932,11 +932,24 @@
     .brand-footer-inner {
       display: block;
     }
+    .venue-hero {
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.13);
+    }
+    .venue-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: rgba(255,255,255,.06);
+    }
     .brand-footer-main {
       display: grid;
       grid-template-columns: minmax(220px, .42fr) minmax(0, 1fr);
       gap: 28px;
       align-items: stretch;
+      margin-top: 28px;
     }
     .brand-footer-logo {
       display: inline-flex;
@@ -968,9 +981,7 @@
       font-size: 15px;
     }
     .venue-card {
-      display: grid;
-      grid-template-columns: minmax(240px, .92fr) minmax(280px, 1fr);
-      align-items: stretch;
+      display: block;
       overflow: hidden;
       border-radius: var(--radius);
       background: rgba(255,255,255,.08);
@@ -1309,9 +1320,9 @@
     <section class="section band" id="pain" aria-labelledby="pain-title">
       <div class="wrap">
         <div class="section-head">
-          <span class="badge">你卡住的不是努力，是資料沒有變成價值</span>
+          <span class="badge">你卡住的不是努力，是資料沒有變成可用成果</span>
           <h2 id="pain-title">很多行政工作，明明重要，卻很容易被看成「順手處理」。</h2>
-          <p class="lead">這堂課先處理三個最常見的困境：資料分散、價值說不出口、履歷寫不出成果。</p>
+          <p class="lead">這堂課先處理三個最常見的困境：資料分散、成果說不清楚、履歷寫不出重點。</p>
         </div>
         <div class="pain-grid">
           <article class="card pain-card">
@@ -1375,7 +1386,7 @@
       <div class="wrap">
         <div class="section-head">
           <span class="badge">下課帶走的，不只是筆記</span>
-          <h2 id="takeaway-title">你會有五份可以明天開始補資料的工作模板。</h2>
+          <h2 id="takeaway-title">你會有五份可以明天開始使用、之後持續補資料的工作模板。</h2>
           <p class="lead">每一份都對應真實場景：找得到、說得出、寫得下、能複用。</p>
         </div>
         <div class="take-layout">
@@ -1493,8 +1504,8 @@
               <div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 18h14l4 6h16v17H7z" fill="#FFE9A6" stroke="#1F3A36" stroke-width="3" stroke-linejoin="round"/><path d="M13 12h26" stroke="#1F3A36" stroke-width="3" stroke-linecap="round"/></svg></div>
               <div class="step-body">
                 <span class="time">45-75 min｜建立模板</span>
-                <h3>整理五個能持續累積的工作資料夾。</h3>
-                <p>名片、人脈、主管偏好、工作紀錄、履歷素材，各自有命名規則與更新方式。</p>
+                <h3>建立五個能持續累積的工作模板。</h3>
+                <p>名片、人脈、主管偏好、工作紀錄、履歷素材，各自有欄位、命名規則與更新方式。</p>
                 <span class="output">產出：5 個模板欄位</span>
               </div>
             </article>
@@ -1619,6 +1630,9 @@
 
   <footer class="brand-footer" aria-label="404TABLE 品牌資訊">
     <div class="wrap brand-footer-inner">
+      <div class="venue-hero">
+        <img src="images/教室環境形象Banner.png" alt="404TABLE 教室環境">
+      </div>
       <div class="brand-footer-main">
         <div class="brand-footer-copy">
           <div class="brand-footer-logo">
@@ -1632,7 +1646,6 @@
           <p>培育 AI 世代未來人：全人教育與新創孵化的第一站。</p>
         </div>
         <div class="venue-card">
-          <img src="images/教室環境形象Banner.png" alt="404TABLE 教室環境">
           <div class="venue-detail">
             <span>活動地點</span>
             <address>台北市中山區長安東路二段31號4樓之5</address>
