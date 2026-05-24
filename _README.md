@@ -17,6 +17,7 @@
 - `第二輪用戶訪談與轉換率建議.md`：針對新版的報名意願、癢點、工具資訊、插圖方向做二次檢核。
 - `視覺插圖文生圖Prompts.md`：給視覺設計產圖用的情境插圖 prompts，後續可替換頁面中的內嵌示意圖。
 - `第三輪用戶訪談_台灣口語與轉換檢核.md`：檢查台灣口語、共鳴度、工具清單與最後轉換阻力。
+- `最終需求訪談與手機版檢核.md`：部署前檢查 Hero 首圖、手機版閱讀體驗與最後轉換風險。
 - `images/`：已生成並整合進頁面的三張插圖資產。
 
 ## 頁面架構
@@ -43,6 +44,8 @@
 - `images/scenario-search-contact.png`：主管臨時問資料，行政在手機、筆電、名片中找資料。
 - `images/mockup-five-work-templates.png`：五份工作模板成果 mockup。
 - `images/resume-value-translation.png`：把雜亂行政工作轉譯成履歷成果。
+- `images/hero-admin-ai-value.png`：Hero 首屏主視覺，台灣行政工作者用 AI 整理工作資料。
+- 頁面實際引用同名 `.jpg` 壓縮版，保留 `.png` 原圖作為設計源檔。
 
 ## 使用方式
 

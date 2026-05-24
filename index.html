@@ -320,6 +320,13 @@
       border: 1px solid rgba(31, 58, 54, 0.12);
       box-shadow: var(--shadow);
     }
+    .hero-photo {
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+      object-fit: cover;
+      object-position: center;
+    }
     .hero-illustration {
       position: absolute;
       inset: 26px 16px 0;
@@ -768,6 +775,7 @@
       .hero { min-height: auto; padding-top: 42px; }
       .hero-art { min-height: 500px; }
       .portrait-card { min-height: 470px; }
+      .hero-photo { min-height: 470px; }
       .take-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .tool-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .desk-card { position: relative; top: auto; }
@@ -789,6 +797,7 @@
       .price { text-align: left; }
       .hero-art { min-height: 430px; }
       .portrait-card { min-height: 410px; }
+      .hero-photo { min-height: 410px; }
       .hero-illustration { inset: 22px 8px 0; width: calc(100% - 16px); }
       .mini-chip { display: none; }
       .floating-note { left: 14px; right: 14px; bottom: 20px; width: auto; }
@@ -884,30 +893,7 @@
 
         <div class="hero-art" aria-label="主視覺">
           <div class="portrait-card">
-            <svg class="hero-illustration" viewBox="0 0 560 560" role="img" aria-labelledby="hero-art-title">
-              <title id="hero-art-title">行政工作者在桌前用 AI 整理工作價值的插畫</title>
-              <defs>
-                <linearGradient id="skin" x1="0" x2="1"><stop stop-color="#F1C7AA"/><stop offset="1" stop-color="#D89C7E"/></linearGradient>
-                <linearGradient id="blazer" x1="0" x2="1"><stop stop-color="#D9C5A4"/><stop offset="1" stop-color="#B99E78"/></linearGradient>
-              </defs>
-              <rect x="58" y="72" width="444" height="310" rx="20" fill="#F7ECD9"/>
-              <path d="M92 116h366" stroke="#1F3A36" stroke-opacity=".13" stroke-width="3"/>
-              <circle cx="420" cy="132" r="48" fill="#F4C95D" opacity=".22"/>
-              <path d="M180 196c8-62 52-100 112-98 60 2 95 43 94 104-1 66-43 108-101 107-62-1-113-46-105-113z" fill="#2D2522"/>
-              <circle cx="286" cy="208" r="78" fill="url(#skin)"/>
-              <path d="M214 202c23-8 42-29 50-58 38 42 74 52 118 51-8-58-45-91-98-94-54-3-88 33-70 101z" fill="#2D2522"/>
-              <path d="M254 230c20 16 48 16 65 0" stroke="#8A5D4A" stroke-width="5" stroke-linecap="round" fill="none"/>
-              <path d="M214 526c5-116 42-181 75-181h12c35 0 76 65 82 181z" fill="url(#blazer)"/>
-              <path d="M256 362l32 88 37-88" fill="#FFF8ED"/>
-              <path d="M136 410h286a28 28 0 0 1 28 28v74H108v-74a28 28 0 0 1 28-28z" fill="#FFFFFF" stroke="#1F3A36" stroke-opacity=".16" stroke-width="2"/>
-              <rect x="178" y="438" width="202" height="88" rx="12" fill="#102522"/>
-              <path d="M214 470h132M214 493h92" stroke="#F4C95D" stroke-width="8" stroke-linecap="round"/>
-              <rect x="80" y="446" width="78" height="48" rx="8" fill="#FFE9A6" stroke="#1F3A36" stroke-opacity=".18"/>
-              <path d="M94 466h48M94 480h32" stroke="#1F3A36" stroke-opacity=".42" stroke-width="4" stroke-linecap="round"/>
-              <rect x="394" y="428" width="70" height="70" rx="16" fill="#DDE8D6"/>
-              <path d="M414 464c18-28 36-34 44-52" stroke="#1F3A36" stroke-width="5" fill="none" stroke-linecap="round"/>
-              <circle cx="438" cy="444" r="10" fill="#F4C95D"/>
-            </svg>
+            <img class="hero-photo" src="images/hero-admin-ai-value.jpg" alt="台灣行政工作者在暖色辦公桌前，用筆電和手機整理工作資料與 AI 提問" loading="eager">
           </div>
           <div class="mini-chip one">工作紀錄</div>
           <div class="mini-chip two">名片資料</div>
@@ -991,7 +977,7 @@
             <p class="lead">你開始翻 LINE、搜尋 Email、打開名片盒，最後還要靠印象猜。這堂課要處理的就是這種每天都會發生、卻很少被算成專業能力的工作。</p>
           </article>
           <article class="card scenario-art image-card" aria-label="主管臨時問資料的情境插圖">
-            <img src="images/scenario-search-contact.png" alt="行政工作者在手機、筆電、名片與便條中搜尋主管臨時需要的資料" loading="lazy">
+            <img src="images/scenario-search-contact.jpg" alt="行政工作者在手機、筆電、名片與便條中搜尋主管臨時需要的資料" loading="lazy">
           </article>
         </div>
         <div class="before-after" aria-label="整理前後範例">
@@ -1007,7 +993,7 @@
           </article>
         </div>
         <article class="card scenario-art image-card resume-art" aria-label="履歷成果轉譯插圖">
-          <img src="images/resume-value-translation.png" alt="將雜亂行政工作條列轉譯成清楚成果卡的桌面插圖" loading="lazy">
+          <img src="images/resume-value-translation.jpg" alt="將雜亂行政工作條列轉譯成清楚成果卡的桌面插圖" loading="lazy">
         </article>
       </div>
     </section>
@@ -1058,7 +1044,7 @@
             </div>
           </div>
           <aside class="card mockup-card image-card" aria-label="五份工作模板示意">
-            <img src="images/mockup-five-work-templates.png" alt="筆電與手機畫面顯示人脈名片、主管偏好、工作紀錄、履歷素材、AI 提問包五大模板" loading="lazy">
+            <img src="images/mockup-five-work-templates.jpg" alt="筆電與手機畫面顯示人脈名片、主管偏好、工作紀錄、履歷素材、AI 提問包五大模板" loading="lazy">
             <h3>不用換工具，也能先把工作整理起來。</h3>
             <p>Google Sheet、Excel、Notion、雲端文件或手機備忘錄都可以。重點是先建立欄位、命名規則與更新習慣。</p>
           </aside>
